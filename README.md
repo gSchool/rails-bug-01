@@ -27,5 +27,9 @@ What should happen:
 
 * You login
 * You see this page:
+* Note: Don't worry about the timestamp message in the wireframes, they're not necessary.
 
 <img src="project/success.png" />
+
+
+
