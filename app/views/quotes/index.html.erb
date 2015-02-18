@@ -9,7 +9,9 @@
       </footer>
     </blockquote>
     <div class="created">
+      <% if quote.created_at %>
       <%= time_ago_in_words(quote.created_at) %> ago
+      <% end %>
     </div>
   </section>
 <% end %>
