@@ -1,5 +1,4 @@
 <h1>Pithy quotes</h1>
-
 <% @quotes.each do |quote| %>
   <section class="quote-container">
     <blockquote class="quote">
@@ -9,7 +8,11 @@
       </footer>
     </blockquote>
     <div class="created">
-      <%= time_ago_in_words(quote.created_at) %> ago
+      <% if quote.created_at %>
+        <%= time_ago_in_words(quote.created_at) %>
+      <% else %>
+        <%= "time undefined" %>
+      <% end %>
     </div>
   </section>
 <% end %>
