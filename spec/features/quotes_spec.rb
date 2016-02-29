@@ -1,5 +1,6 @@
 require 'rails_helper'
 require 'capybara/rails'
+require 'date_helper'
 
 feature 'Auth' do
 
