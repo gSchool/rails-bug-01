@@ -16,6 +16,7 @@ feature 'Auth' do
 
     expect(page).to have_content("Something pithy")
     expect(page).to have_content("Something cool")
+    expect(page).to have_selector("div.created", text: /.+/)
   end
 
 end
