@@ -1,5 +1,6 @@
 require 'rails_helper'
 require 'capybara/rails'
+require 'time_ago_in_words'
 
 feature 'Auth' do
 
