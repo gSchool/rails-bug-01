@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'bcrypt', '~> 3.1.7'
+gem 'time_ago_in_words', '~> 0.1.1'
 
 group :development, :test do
   gem "rspec-rails", "3.0.1"
