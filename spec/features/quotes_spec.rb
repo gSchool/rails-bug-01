@@ -5,8 +5,8 @@ feature 'Auth' do
 
   scenario 'Users can view quotes' do
     create_user email: "user@example.com"
-    Quote.create!(text: %Q{Something pithy})
-    Quote.create!(text: %Q{Something cool})
+    Quote.create!(text: %Q{Something pithy}, created_at: Date.new)
+    Quote.create!(text: %Q{Something cool}, created_at: Date.new)
 
     visit root_path
     click_on "Login"
