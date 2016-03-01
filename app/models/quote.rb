@@ -1,5 +1,4 @@
 class Quote < ActiveRecord::Base
-	is_complete
 
 	validates :text, presence:true
 	validates :author, presence:true
