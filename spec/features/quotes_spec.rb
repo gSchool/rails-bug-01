@@ -5,8 +5,7 @@ feature 'Auth' do
 
   scenario 'Users can view quotes' do
     create_user email: "user@example.com"
-    Quote.create!(text: %Q{Something pithy})
-    Quote.create!(text: %Q{Something cool})
+    Quote.create!(text: %Q{Something pithy}, author: %Q{Buddy Hackett}, created_at: (Date.today-1), updated_at: (Date.today-1))
 
     visit root_path
     click_on "Login"
@@ -15,7 +14,6 @@ feature 'Auth' do
     click_on "Login"
 
     expect(page).to have_content("Something pithy")
-    expect(page).to have_content("Something cool")
   end
 
 end
