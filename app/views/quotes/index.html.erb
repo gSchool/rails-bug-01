@@ -10,9 +10,9 @@
     </blockquote>
     <div class="created">
     <% if quote.created_at %>
-        <%= time_ago_in_words(quote.created_at) %> ago
+        <%= time_ago_in_words(quote.created_at) unless quote.created_at.blank?%> ago
       <% else %>
-        ago 
+        less than a minute ago 
       <% end %>
     </div>
   </section>
