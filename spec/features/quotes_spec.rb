@@ -1,9 +1,6 @@
 require 'rails_helper'
 require 'capybara/rails'
-require 'action_view'
-require 'action_view/helpers'
 require 'date'
-include ActionView::Helpers::DateHelper
 
 feature 'Auth' do
 
