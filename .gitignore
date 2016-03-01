@@ -15,9 +15,5 @@
 /log/*.log
 /tmp
 
-# Ignore npm modules for Grunt
-node_modules
-
-# Ignore Gruntfiles.js
+#mauricio local
 Gruntfile.js
-mod
