@@ -8,8 +8,8 @@ SET client_min_messages = warning;
 SET search_path = public, pg_catalog;
 
 COPY quotes (id, text, author, created_at, updated_at) FROM stdin;
-1	People who think they know everything are a great annoyance to those of us who do.	Isaac Asimov	\N	\N
-2	As a child my family's menu consisted of two choices: take it or leave it.	Buddy Hackett	\N	\N
+1	People who think they know everything are a great annoyance to those of us who do.	Isaac Asimov 2014-07-12 03:40:54.405448  2014-07-12 03:50:54.405448
+2	As a child my family's menu consisted of two choices: take it or leave it.	Buddy Hackett	2014-07-12 03:40:54.405448	2014-07-12 03:51:54.405448
 3	My fake plants died because I did not pretend to water them.	Mitch Hedberg	2014-07-12 03:40:54.405448	2014-07-12 03:40:54.405448
 4	If the facts don't fit the theory, change the facts.	Albert Einstein	2014-07-12 03:40:54.4157	2014-07-12 03:40:54.4157
 \.
@@ -23,4 +23,3 @@ COPY users (id, name, email, password_digest) FROM stdin;
 \.
 
 SELECT pg_catalog.setval('users_id_seq', 2, true);
-
