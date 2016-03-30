@@ -1,9 +1,9 @@
 require 'rails_helper'
 require 'capybara/rails'
 
-feature 'Auth' do
+feature 'Quotes' do
 
-  scenario 'Users can view quotes' do
+  scenario 'Users can view quotes and the time each was added' do
     create_user email: "user@example.com"
     Quote.create!(text: %Q{Something pithy})
     Quote.create!(text: %Q{Something cool})
@@ -16,6 +16,7 @@ feature 'Auth' do
 
     expect(page).to have_content("Something pithy")
     expect(page).to have_content("Something cool")
+    expect(page).to have_content("less than a minute ago")
   end
 
 end
